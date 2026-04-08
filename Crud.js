@@ -17,23 +17,4 @@ function dividirValores(a, b) {
     return a / b;
 }
 
-// crud.js
 
-// export function somarValores(a, b) {
-//     return a + b;
-// }
-
-// export function diminuirValores(a, b) {
-//     return a - b;
-// }
-
-// export function multiplicarValores(a, b) {
-//     return a * b;
-// }
-
-// export function dividirValores(a, b) {
-//     if (b === 0) {
-//         return "Erro: divisão por zero";
-//     }
-//     return a / b;
-// }   
