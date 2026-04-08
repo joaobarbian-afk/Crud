@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora Simples Com crud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="crud.js"></script>
-    <script src="main.js"></script>
-
 </head>
 
 <body>
-    <H1>Calculadora</H1>
+    <header>
+        <h1>Calculadora simples</h1>
+    </header>
 
-    <input type="Number" id="N1" placeholder="1º numeral">
-    <input type="Number" id="N2" placeholder="2º numeral">
+    <main>
+        <div class="direita">
 
-    <div class="botoes">
-        <button onclick="somar()">+</button>
-        <button onclick="subtrair()">−</button>
-        <button onclick="multiplicar()">×</button>
-        <button onclick="dividir()">÷</button>
-    </div>
-    <h2 id="resultado">Resultado: </h2>
+
+            <div class="botões">
+                <input type="number" id="N1" placeholder="1º numero">
+                <input type="number" id="N2" placeholder="2º numero">
+
+                <button class="BS" onclick="somar()">Somar</button>
+                <button class="BD" onclick="diminuir()">Diminuir</button>
+                <button class="BM" onclick="mult()">Multiplicar</button>
+                <button class="BD" onclick="dividir()">Dividir</button>
+            </div>
+        </div>
+        <div class="esquerda">
+
+            <h2>Histórico</h2>
+            <ul id="historico"></ul>
+
+            <button onclick="limparHistorico()">Limpar histórico</button>
+
+        </div>
+    </main>
 
     <script src="crud.js"></script>
     <script src="main.js"></script>
+
+
+
 </body>
 
 </html>

@@ -1,3 +1,144 @@
-*{
-   margin: 0; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #ff5e00, #ff8800);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+
+/* MAIN */
+main {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1e1e2f;
+}
+
+/* LADO DIREITO (CALCULADORA) */
+.direita {
+    display: flex;
+    height: 50vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CAIXA DA CALCULADORA */
+.botões {
+    background: #2c2c3e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+/* INPUTS */
+.botões input {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* BOTÕES GERAIS */
+.botões button {
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botões button:hover {
+    transform: scale(1.05);
+}
+
+/* CORES DOS BOTÕES */
+.BS {
+    background: orangered;
+    color: white;
+}
+
+.BD {
+    background: rgb(0, 17, 255);
+    color: white;
+}
+
+.BM {
+    background: orangered;
+    color: white;
+}
+
+/* LADO ESQUERDO (HISTÓRICO) */
+.esquerda {
+    height: 50vh;
+    width: 40vw;
+    background: #2c2c3e;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TÍTULO */
+.esquerda h2 {
+    text-align: center;
+}
+
+/* LISTA HISTÓRICO */
+#historico {
+    border: 1px solid #555;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    list-style: none;
+    border-radius: 10px;
+    background: #1e1e2f;
+}
+
+/* ITENS DO HISTÓRICO */
+#historico li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #444;
+}
+
+/* BOTÃO LIMPAR */
+.esquerda button {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: orangered;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.esquerda button:hover {
+    transform: scale(1.05);
 }
